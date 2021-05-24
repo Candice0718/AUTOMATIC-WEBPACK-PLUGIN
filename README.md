@@ -1,0 +1,2 @@
+# AUTOMATIC-WEBPACK-PLUGIN
+组件自动化注册、页面自动化注册
