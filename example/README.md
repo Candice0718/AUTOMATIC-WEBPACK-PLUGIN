@@ -1,45 +1,46 @@
-# AUTOMATIC-WEBPACK-PLUGIN
-组件自动化注册、页面自动化注册
+# example
 
-## 安装
-
-```bash
-npm install automatic-webpack-plugin
+## Project setup
+```
+npm install
 ```
 
-## 需要环境
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-- webpack >= 4
-- Nodes >= 8
+### Compiles and minifies for production
+```
+npm run build
+```
 
-## 配置参数
+### Lints and fixes files
+```
+npm run lint
+```
 
-+ useFile[boolean] 
-default     false
-description 是否监听文件（默认只监听文件夹）
-+ maxlevel[string]
-default     1
-description 文件监听层级
-+ inPath[string]
-default     没有默认必传参数
-description 监听的文件路径
-+ outPath[string]
-default     inPath + '/index.js'
-description 自动生成的文件
-+ templateEach[function]
-default     没有默认必传参数
-param      fileName[文件名称]
-param      filePath[文件路径]
-description 需要遍历生成的模板
-+ out[function]
-default     template => template
-param      template[遍历生成的文本]
-param      modules[模块]
-description 最终生成的文本
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
-## 示例（详细配置见example）
+### 测试步骤
 
-  ```javascript
+1. 创建`automatic-webpack-plugin`软连接
+
+   ```bash
+   yarn link
+   ```
+
+2. 进入`example`目录，使用`automatic-webpack-plugin`软连接
+
+   ```
+   cd example
+   yarn link "automatic-webpack-plugin"
+   ```
+
+3. 在`vue.config.js`引入`automatic-webpack-plugin`并添加相关配置
+
+   ```javascript
    const path = require('path');
    const AutoMaticWebpackPlugin = require('automatic-webpack-plugin');
    
@@ -235,5 +236,15 @@ description 最终生成的文本
            ]
        }
    }
-  ```
+   ```
+
+4. 编译、运行开发环境
+
+   ```
+   npm run serve
+   ```
+
+   
+
+
 
