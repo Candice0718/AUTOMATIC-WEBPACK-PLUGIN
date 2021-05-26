@@ -15,27 +15,27 @@ npm install automatic-webpack-plugin
 ## 配置参数
 
 + useFile[boolean] 
-default     false
-description 是否监听文件（默认只监听文件夹）
+default:     false
+description: 是否监听文件（默认只监听文件夹）
 + maxlevel[string]
-default     1
-description 文件监听层级
+default:     1
+description: 文件监听层级
 + inPath[string]
-default     没有默认必传参数
-description 监听的文件路径
+default:     没有默认必传参数
+description: 监听的文件路径
 + outPath[string]
-default     inPath + '/index.js'
-description 自动生成的文件
+default:     inPath + '/index.js'
+description: 自动生成的文件
 + templateEach[function]
-default     没有默认必传参数
-param      fileName[文件名称]
-param      filePath[文件路径]
+default:     没有默认必传参数
+param:      fileName[文件名称]
+param:      filePath[文件路径]
 description 需要遍历生成的模板
 + out[function]
 default     template => template
-param      template[遍历生成的文本]
-param      modules[模块]
-description 最终生成的文本
+param:      template[遍历生成的文本]
+param:      modules[模块]
+description: 最终生成的文本
 
 ## 示例（详细配置见example）
 

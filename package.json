@@ -1,6 +1,6 @@
 {
   "name": "automatic-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "组件自动化注册、页面自动化注册",
   "main": "automatic.plugin.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "code"
   ],
   "author": "Candice",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Candice0718/AUTOMATIC-WEBPACK-PLUGIN/issues"
   },
